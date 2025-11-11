@@ -4,7 +4,8 @@ const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 
 gulp.task('css', function () {
-  return gulp.src('./assets/css/*.css')
+  return gulp
+    .src('./assets/css/*.css')
     .pipe(postcss([autoprefixer()]))
     .pipe(gulp.dest('./dist'));
 });
