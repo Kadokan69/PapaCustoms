@@ -1,0 +1,89 @@
+.service {
+  position: relative;
+}
+.service::before {
+  background-image: url(../img/service-bg.png);
+  content: '';
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  background-repeat: no-repeat;
+  left: 0;
+  position: absolute;
+  bottom: -50%;
+  width: 100%;
+  z-index: -1;
+}
+.service__wrapper {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: 10px;
+}
+
+.service__gallery__item {
+  padding: 10px;
+  border-radius: 20px;
+}
+.service__gallery__images {
+  overflow: hidden;
+  border-radius: 20px;
+}
+.service__content {
+  line-height: 1.5;
+  padding: 20px 0px 20px 30px;
+}
+.service__content h2 {
+  font-size: 40px;
+  margin-block: 40px;
+}
+.service__content-list-numb {
+  list-style: decimal;
+  font-size: 20px;
+  list-style-position: inside;
+}
+.services_cases-page {
+  overflow: hidden;
+  margin-bottom: 120px;
+}
+
+.service-page__items {
+  gap: 30px;
+}
+.service-page__item {
+  flex: 0 0 33%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.service__content-form {
+  max-width: 400px;
+  margin-top: 74px;
+}
+.service__content-form input {
+  border: 1px solid;
+}
+.service__content-form .form-section-submit-button {
+  padding: 14px;
+}
+@media (max-width: 989px) {
+  .service__wrapper {
+    grid-template-columns: 1fr;
+  }
+  .service__content-form {
+    max-width: 100%;
+  }
+  .breadcrumbs li {
+    font-size: 28px;
+  }
+  .service-page__item {
+    flex: 0 0 50%;
+  }
+}
+@media (max-width: 767px) {
+  .service__content {
+    padding: 10px;
+  }
+  .service-page__item {
+    flex: 0 0 100%;
+  }
+}
