@@ -20,6 +20,9 @@ h2 {
 p {
   font-size: 20px;
 }
+.scroll-lock{
+  overflow: hidden;
+}
 .header__container {
   max-width: 1324px;
   margin: 0 auto;
