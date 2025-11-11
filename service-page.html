@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PapaCustoms</title>
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/fonts.css" />
+    <link rel="stylesheet" href="assets/css/style.min.css" />
+    <script src="assets/js/embla-carousel.js"></script>
+  </head>
+  <body>
+    <div class="overlay" id="menu-overlay"></div>
+    <header>
+      <div class="header__container">
+        <div class="header__logo">
+          <img src="./assets/img/logo.png" alt="" />
+        </div>
+
+        <div class="header__wrapper-nav">
+          <div class="header__wrapper">
+            <button class="burger" id="burger-menu" aria-label="Открыть меню">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <div class="menu" id="nav-menu">
+              <nav class="nav">
+                <ul class="nav__list">
+                  <li class="nav__item">
+                    <a href="#contacts" class="anchor-link">О нас</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#contacts" class="anchor-link">Кейсы</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#contacts" class="anchor-link">Услуги</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#contacts" class="anchor-link">Магазин</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#contacts" class="anchor-link">Отзывы</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#contacts" class="anchor-link">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="header__contacts">
+          <div class="header__phone">
+            <a href="#">+7 916 799 99 09</a>
+          </div>
+          <div class="header__social">
+            <a href="#"><img src="./assets/img/wa-ico.svg" alt="" /></a>
+            <a href="#"><img src="./assets/img/tg-ico.svg" alt="" /></a>
+            <a href="#"><img src="./assets/img/vk-ico.svg" alt="" /></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="breadcrumbs">
+        <ul>
+          <li><a href="#">Услуги</a></li>
+          <li>Установка аудиосистемы</li>
+        </ul>
+      </section>
+      <section class="service">
+        <div class="service__wrapper">
+          <div class="service__gallery">
+            <div class="service__gallery__item">
+              <div class="service__gallery__images">
+                <img
+                  src="./assets/img/image-service.jpg"
+                  alt="Установка аудиосистемы"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="service__content">
+            <div class="service__content-text">
+              <h2 class="service__content-title">Установка аудиосистемы</h2>
+              <p>
+                Хороший, качественный и объемный звук в автомобиле — не роскошь,
+                а важная составляющая приятной атмосферы и хорошего настроения в
+                дороге. Papa Customs создаст для вас максимально реалистичный
+                звук, учитывая все ваши пожелания.
+              </p>
+              <p>
+                В салоне станет заметно тише за счёт шумоизоляции, а багажник
+                останется полностью функциональным — сабвуфер аккуратно
+                встраеватеся в крыло. Внешне всё выглядит как заводская
+                установка, без лишних элементов и проводов.
+              </p>
+
+              <h2 class="service__content-title">
+                Мастера Papa Customs выполняют:
+              </h2>
+              <ul class="service__content-list-numb">
+                <li>Выбор компонентов аудиосистемы</li>
+                <li>Разработку схемы размещения аудиосистемы</li>
+                <li>
+                  Разработку схемы крепления системы (стальная рама, деревянное
+                  основание, изготовление креплений на 3д принтере)
+                </li>
+                <li>Изготовление акустических стоек</li>
+                <li>Протяжку нештатных акустических проводов</li>
+                <li>Установку фронтальной акустики</li>
+                <li>
+                  Изготовление корпуса сабвуфера (по выбору заказчика «Стелс»
+                  или закрытый ящик)
+                </li>
+                <li>Установку сабвуферного динамика</li>
+                <li>Установку процессора или процессорного усилителя</li>
+                <li>Установку усилителей</li>
+                <li>Установку прочего оборудования по желанию заказчика</li>
+                <li>Коммутацию и подключение системы</li>
+                <li>Настройку системы.</li>
+              </ul>
+            </div>
+            <div class="service__content-form">
+              <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="form-section-input"
+                    placeholder="Имя"
+                    required
+                  />
+                  <span class="error-message" id="nameError"></span>
+                </div>
+
+                <div class="form-group">
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    class="form-section-input"
+                    placeholder="Телефон"
+                    required
+                  />
+                  <span class="error-message" id="phoneError"></span>
+                </div>
+
+                <div class="form-group checkbox-group">
+                  <input
+                    type="checkbox"
+                    id="agreement"
+                    name="agreement"
+                    class="form-section-checkbox"
+                    required
+                    checked
+                  />
+                  <label for="agreement" class="form-checkbox-label">
+                    Согласие на обработку данных
+                  </label>
+                  <span class="error-message" id="agreementError"></span>
+                </div>
+
+                <button
+                  type="submit"
+                  class="form-section-submit-button"
+                  id="submitButton"
+                >
+                  Получить консультацию
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services_cases-page">
+        <div class="services_cases__wrapper">
+          <div class="cases">
+            <div class="cases__wrapper">
+              <div class="cases__title">
+                <h2>Услуги</h2>
+              </div>
+              <div class="cases-page__carusel">
+                <div class="cases-page__items service-page__items">
+                  <article class="services__item service-page__item">
+                    <div class="services__images">
+                      <img
+                        src="./assets/img/services-img.png"
+                        alt="Изготовление короба типа «Стелс» для сабвуфера"
+                      />
+                    </div>
+                    <div class="services__info">
+                      <h3 class="services__info-title">
+                        Изготовление короба типа «Стелс» для сабвуфера
+                      </h3>
+
+                      <p class="services__text">
+                        Чтобы ваша машина зазвучала по-новому, наши специалисты
+                        сделают необходимый апгрейд. Короб типа «Стелс»
+                        изготавливается вручную и плотно прилегает к нише левого
+                        или правого заднего крыла, что позволяет полноценно
+                        использовать багажник без потери полезного объёма.
+                      </p>
+
+                      <a class="services__btn">Узнать больше</a>
+                    </div>
+                  </article>
+                  <article class="services__item service-page__item">
+                    <div class="services__images">
+                      <img
+                        src="./assets/img/services-img.png"
+                        alt="Изготовление короба типа «Стелс» для сабвуфера"
+                      />
+                    </div>
+                    <div class="services__info">
+                      <h3 class="services__info-title">
+                        Изготовление короба типа «Стелс» для сабвуфера
+                      </h3>
+
+                      <p class="services__text">
+                        Чтобы ваша машина зазвучала по-новому, наши специалисты
+                        сделают необходимый апгрейд. Короб типа «Стелс»
+                        изготавливается вручную и плотно прилегает к нише левого
+                        или правого заднего крыла, что позволяет полноценно
+                        использовать багажник без потери полезного объёма.
+                      </p>
+
+                      <a class="services__btn">Узнать больше</a>
+                    </div>
+                  </article>
+                  <article class="services__item service-page__item">
+                    <div class="services__images">
+                      <img
+                        src="./assets/img/services-img.png"
+                        alt="Изготовление короба типа «Стелс» для сабвуфера"
+                      />
+                    </div>
+                    <div class="services__info">
+                      <h3 class="services__info-title">
+                        Изготовление короба типа «Стелс» для сабвуфера
+                      </h3>
+
+                      <p class="services__text">
+                        Чтобы ваша машина зазвучала по-новому, наши специалисты
+                        сделают необходимый апгрейд. Короб типа «Стелс»
+                        изготавливается вручную и плотно прилегает к нише левого
+                        или правого заднего крыла, что позволяет полноценно
+                        использовать багажник без потери полезного объёма.
+                      </p>
+
+                      <a class="services__btn">Узнать больше</a>
+                    </div>
+                  </article>
+                  <article class="services__item service-page__item">
+                    <div class="services__images">
+                      <img
+                        src="./assets/img/services-img.png"
+                        alt="Изготовление короба типа «Стелс» для сабвуфера"
+                      />
+                    </div>
+                    <div class="services__info">
+                      <h3 class="services__info-title">
+                        Изготовление короба типа «Стелс» для сабвуфера
+                      </h3>
+
+                      <p class="services__text">
+                        Чтобы ваша машина зазвучала по-новому, наши специалисты
+                        сделают необходимый апгрейд. Короб типа «Стелс»
+                        изготавливается вручную и плотно прилегает к нише левого
+                        или правого заднего крыла, что позволяет полноценно
+                        использовать багажник без потери полезного объёма.
+                      </p>
+
+                      <a class="services__btn">Узнать больше</a>
+                    </div>
+                  </article>
+                  <article class="services__item service-page__item">
+                    <div class="services__images">
+                      <img
+                        src="./assets/img/services-img.png"
+                        alt="Изготовление короба типа «Стелс» для сабвуфера"
+                      />
+                    </div>
+                    <div class="services__info">
+                      <h3 class="services__info-title">
+                        Изготовление короба типа «Стелс» для сабвуфера
+                      </h3>
+
+                      <p class="services__text">
+                        Чтобы ваша машина зазвучала по-новому, наши специалисты
+                        сделают необходимый апгрейд. Короб типа «Стелс»
+                        изготавливается вручную и плотно прилегает к нише левого
+                        или правого заднего крыла, что позволяет полноценно
+                        использовать багажник без потери полезного объёма.
+                      </p>
+
+                      <a class="services__btn">Узнать больше</a>
+                    </div>
+                  </article>
+                  <article class="services__item service-page__item">
+                    <div class="services__images">
+                      <img
+                        src="./assets/img/services-img.png"
+                        alt="Изготовление короба типа «Стелс» для сабвуфера"
+                      />
+                    </div>
+                    <div class="services__info">
+                      <h3 class="services__info-title">
+                        Изготовление короба типа «Стелс» для сабвуфера
+                      </h3>
+
+                      <p class="services__text">
+                        Чтобы ваша машина зазвучала по-новому, наши специалисты
+                        сделают необходимый апгрейд. Короб типа «Стелс»
+                        изготавливается вручную и плотно прилегает к нише левого
+                        или правого заднего крыла, что позволяет полноценно
+                        использовать багажник без потери полезного объёма.
+                      </p>
+
+                      <a class="services__btn">Узнать больше</a>
+                    </div>
+                  </article>
+                </div>
+                <div class="cases-page__carusel__progress">
+                  <div class="cases-page__carusel__progress__bar"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer__wrapper">
+        <div class="footer__info">
+          <img class="footer__logo" src="./assets/img/logo.png" alt="" />
+          <p class="footer__adress">
+            Можайское шоссе вл 167, Москва Одинцовский городской округ
+          </p>
+        </div>
+        <div class="footer__navigation">
+          <nav class="footer__nav">
+            <ul class="footer__nav__list">
+              <li class="footer__nav__item">
+                <a href="#contacts" class="anchor-link">О нас</a>
+              </li>
+              <li class="footer__nav__item">
+                <a href="#contacts" class="anchor-link">Кейсы</a>
+              </li>
+              <li class="footer__nav__item">
+                <a href="#contacts" class="anchor-link">Услуги</a>
+              </li>
+              <li class="footer__nav__item">
+                <a href="#contacts" class="anchor-link">Отзывы</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__contact">
+          <div class="footer__contacts">
+            <a class="footer__contact__mail" href="#">papacustoms@yandex.ru</a>
+            <a class="footer__contact__phone" href="#">+7 916 799 99 09</a>
+          </div>
+          <div class="footer__contact__social">
+            <a href="#"><img src="./assets/img/wa-ico.svg" alt="" /></a>
+            <a href="#"><img src="./assets/img/tg-ico.svg" alt="" /></a>
+            <a href="#"><img src="./assets/img/vk-ico.svg" alt="" /></a>
+          </div>
+        </div>
+        <div class="footer__copyright">
+          <div class="footer__copyright-links">
+            <a href="" class="footer__copyright-link"
+              >Политика конфиденциальности</a
+            >
+            <a href="" class="footer__copyright-link"
+              >Пользовательское соглашение</a
+            >
+          </div>
+          <p class="footer__copyright-text">
+            © 2025 papacustoms. Все права защищены.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <template id="modal-form-template">
+      <div class="modal-overlay" id="modal-overlay">
+        <div
+          class="modal"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="modal-title"
+        >
+          <div class="modal-header">
+            <h2 class="modal-title">Мы свяжемся с вами в ближайшее время</h2>
+            <button class="modal-close" aria-label="Закрыть окно">
+              &times;
+            </button>
+          </div>
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="form-section-input"
+                placeholder="Имя"
+                required
+              />
+              <span class="error-message" id="nameError"></span>
+            </div>
+
+            <div class="form-group">
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                class="form-section-input"
+                placeholder="Телефон"
+                required
+              />
+              <span class="error-message" id="phoneError"></span>
+            </div>
+
+            <div class="form-group checkbox-group">
+              <input
+                type="checkbox"
+                id="agreement"
+                name="agreement"
+                class="form-section-checkbox"
+                required
+                checked
+              />
+              <label for="agreement" class="form-checkbox-label">
+                Согласие на обработку данных
+              </label>
+              <span class="error-message" id="agreementError"></span>
+            </div>
+
+            <button
+              type="submit"
+              class="form-section-submit-button"
+              id="submitButton"
+            >
+              Отправить
+            </button>
+          </form>
+        </div>
+      </div>
+    </template>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/index.min.js"></script>
+    <script type="text/javascript">
+      const emblaNodeCase = document.querySelector('.cases-page__carusel');
+      const progressNodeCase = emblaNodeCase.querySelector(
+        '.cases-page__carusel__progress__bar'
+      );
+      const options = { loop: false };
+
+      const createProgressBar = progressNode => {
+        if (!progressNode) return null;
+
+        const applyProgress = emblaApi => {
+          if (!emblaApi) return;
+          const progress = Math.max(0, Math.min(1, emblaApi.scrollProgress()));
+          progressNode.style.transform = `translate3d(${progress * 100}%,0px,0px)`;
+        };
+
+        const removeProgress = () => {
+          progressNode.removeAttribute('style');
+        };
+
+        return { applyProgress, removeProgress };
+      };
+
+      const progressBarCases = createProgressBar(progressNodeCase);
+
+      emblaApiCase = EmblaCarousel(emblaNodeCase, options);
+
+      if (progressBarCases) {
+        const { applyProgress, removeProgress } = progressBarCases;
+
+        emblaApiCase
+          .on('init', () => applyProgress(emblaApiCase))
+          .on('reInit', () => applyProgress(emblaApiCase))
+          .on('scroll', () => applyProgress(emblaApiCase))
+          .on('slideFocus', () => applyProgress(emblaApiCase))
+          .on('destroy', removeProgress);
+      }
+    </script>
+  </body>
+</html>
