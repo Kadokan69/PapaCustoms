@@ -1,26 +1,31 @@
 module.exports = {
   plugins: [
-    require("postcss-import")({
-      path: ["assets/css", "./"],
+    require('postcss-import')({
+      path: ['assets/css', './']
     }),
-    require("autoprefixer")({
-      overrideBrowserslist: ["last 15 versions", "> 1%", "ie >= 11", "not dead"],
-      grid: "autoplace",
+    require('autoprefixer')({
+      overrideBrowserslist: [
+        'last 15 versions',
+        '> 1%',
+        'ie >= 11',
+        'not dead'
+      ],
+      grid: 'autoplace',
       flexbox: true,
-      cascade: true,
+      cascade: true
     }),
-    require("cssnano")({
+    require('cssnano')({
       preset: [
-        "default",
+        'default',
         {
           discardComments: {
-            removeAll: true,
+            removeAll: true
           },
           normalizeWhitespace: true,
           colormin: true,
-          convertValues: true,
-        },
-      ],
-    }),
-  ],
+          convertValues: true
+        }
+      ]
+    })
+  ]
 };

@@ -20,7 +20,7 @@ h2 {
 p {
   font-size: 20px;
 }
-.scroll-lock{
+.scroll-lock {
   overflow: hidden;
 }
 .header__container {
@@ -89,7 +89,7 @@ p {
   transform: translate(0%, -50%);
   left: -55px;
   top: 50%;
-  font-family: "Bebas Neue";
+  font-family: 'Bebas Neue';
   font-size: 29px;
   height: 100%;
   width: 10px;
@@ -109,13 +109,17 @@ p {
 }
 
 .hero__decoration::before {
-  content: "";
+  content: '';
   width: 5px;
   display: block;
   height: 100%;
   left: 0px;
   position: absolute;
-  background: radial-gradient(circle, rgba(255, 255, 255, 1) 20%, rgba(0, 0, 0, 1) 100%);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 20%,
+    rgba(0, 0, 0, 1) 100%
+  );
 }
 .hero__content {
   display: grid;
@@ -165,7 +169,7 @@ p {
   position: relative;
 }
 .hero__links > *:not(:first-child)::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 8px;
   height: 8px;
@@ -189,7 +193,7 @@ p {
   position: relative;
 }
 .about_works_bg {
-  background-image: url("../img/about_work.png");
+  background-image: url('../img/about_work.png');
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
@@ -218,7 +222,7 @@ p {
 .about_works__item-title {
   color: #d51030d9;
   font-size: 98px;
-  font-family: "Bebas Neue Reg";
+  font-family: 'Bebas Neue Reg';
 }
 .about_works__item-text {
   letter-spacing: -2px;
@@ -295,7 +299,7 @@ p {
   position: relative;
 }
 .cases__text-link::after {
-  content: "";
+  content: '';
   display: flex;
   width: 30px;
   height: 10px;
@@ -372,7 +376,7 @@ p {
   text-transform: uppercase;
   font-size: 22px;
   font-weight: 500;
-  font-family: "Inter";
+  font-family: 'Inter';
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -384,7 +388,10 @@ p {
   font-size: 18px;
   line-height: 1.4;
 }
-.services__item:not(.services-category:nth-child(1) .services__item:nth-child(1)) .services__text {
+.services__item:not(
+    .services-category:nth-child(1) .services__item:nth-child(1)
+  )
+  .services__text {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -411,7 +418,7 @@ p {
 }
 .inter-section-bg::before,
 .inter-section-bg-2::before {
-  content: "";
+  content: '';
   z-index: -1;
   position: absolute;
 
@@ -457,7 +464,7 @@ p {
   align-items: center;
 }
 .steps__item::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -466,7 +473,9 @@ p {
   border: 1px solid transparent;
   background: linear-gradient(180deg, #d00000 0%, #430404 100%) border-box;
   border-radius: 20px;
-  mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  mask:
+    linear-gradient(#fff 0 0) padding-box,
+    linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
 }
@@ -653,7 +662,7 @@ p {
 .form-checkbox-label {
   padding-left: 15px;
 }
-input[type="checkbox"] {
+input[type='checkbox'] {
   appearance: none;
   position: relative;
   width: 16px;
@@ -663,20 +672,20 @@ input[type="checkbox"] {
   border: 1px solid #000000;
   transition: 500ms;
 }
-input[type="checkbox"]::after {
-  content: "";
+input[type='checkbox']::after {
+  content: '';
   position: absolute;
   top: 4px;
   left: 3px;
   width: 10px;
   height: 10px;
-  background-image: url("../img/Interface/done.svg");
+  background-image: url('../img/Interface/done.svg');
   background-repeat: no-repeat;
   transition: 300ms;
   opacity: 0;
   overflow: hidden;
 }
-input[type="checkbox"]:checked::after {
+input[type='checkbox']:checked::after {
   opacity: 1;
   transition: 300ms;
 }
@@ -696,6 +705,8 @@ input[type="checkbox"]:checked::after {
   gap: 20px;
   color: #ffffffe5;
   padding-block: 75px;
+  max-width: 1322px;
+  margin: 0 auto;
 }
 .footer__info {
   display: flex;
@@ -739,7 +750,7 @@ input[type="checkbox"]:checked::after {
 }
 .footer__contact__mail::before,
 .footer__contact__phone::before {
-  content: "";
+  content: '';
   background-image: url(../img/mail-ico.svg);
   width: 30px;
   height: 30px;
@@ -953,7 +964,10 @@ input[type="checkbox"]:checked::after {
     grid-template-rows: 220px;
     grid-auto-rows: 1fr;
   }
-  .services__item:not(.services-category:nth-child(1) .services__item:nth-child(1)) .services__text {
+  .services__item:not(
+      .services-category:nth-child(1) .services__item:nth-child(1)
+    )
+    .services__text {
     overflow: hidden;
     text-overflow: initial;
     display: -webkit-box;
@@ -989,14 +1003,14 @@ input[type="checkbox"]:checked::after {
     background: transparent;
     color: #fff;
     border-bottom: 1px solid;
-    font-family: "Bebas Neue";
+    font-family: 'Bebas Neue';
     font-size: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   .services-category-btn::after {
-    content: "";
+    content: '';
     background-image: url(../img/uiw_down.svg);
     background-size: contain;
     background-repeat: no-repeat;
@@ -1010,7 +1024,7 @@ input[type="checkbox"]:checked::after {
   }
   .services-category:nth-child(1) > .services-category-btn::before,
   .services-category:nth-child(2) > .services-category-btn::before {
-    content: "";
+    content: '';
 
     background-size: contain;
     background-repeat: no-repeat;
@@ -1039,6 +1053,11 @@ input[type="checkbox"]:checked::after {
   }
   .cases__carusel {
     overflow: hidden;
+  }
+  .cases__tag-list {
+    display: flex;
+    gap: 5px;
+    flex-flow: wrap;
   }
   .cases__carusel__progress {
     display: block;
@@ -1096,13 +1115,19 @@ input[type="checkbox"]:checked::after {
     content: none;
   }
   .steps__item:not(:last-child):after {
-    content: "";
+    content: '';
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     height: 1px;
-    background: linear-gradient(90deg, #000000 0%, #d51030 37.02%, #d51030 65.38%, #000000 100%);
+    background: linear-gradient(
+      90deg,
+      #000000 0%,
+      #d51030 37.02%,
+      #d51030 65.38%,
+      #000000 100%
+    );
   }
   .steps__images {
     max-width: 90px;
