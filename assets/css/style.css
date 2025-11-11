@@ -560,6 +560,7 @@ p {
   max-width: 90%;
   overflow: hidden;
   margin-top: 67px;
+  margin-inline: auto;
 }
 .reviews__carusel__progress__bar {
   background-color: #d51030;
@@ -1049,6 +1050,7 @@ input[type="checkbox"]:checked::after {
     max-width: 90%;
     overflow: hidden;
     margin-top: 67px;
+    margin-inline: auto;
   }
   .cases__carusel__progress__bar {
     background-color: #d51030;
