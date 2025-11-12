@@ -27,7 +27,9 @@
   transition: all 0.3s ease-in-out;
 }
 .modal-video {
-  max-width: 100%;
+  max-width: 80%;
+  height: 80%;
+  padding: 45px;
 }
 .modal-overlay.active .modal {
   transform: scale(1) translateY(0);
